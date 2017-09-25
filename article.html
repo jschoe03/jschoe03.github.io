@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- 위는 표준 html 지정 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- 위는 한글 안 깨지게 하기 위함 & 원래 모든 태그는 닫아야 하지만 meta 태그는 예외! -->
+		<title>"경영 똑바로 하시오" 옐로카드 내미는 주주들</title>
+		<style type="text/css">
+			* {
+			/* selector '*': 모든 요소에 적용시키겠다*/
+			/* 저 자리에 'p'를 넣으면 모든 'p'에 해당 스타일을 적용하겠다는 의미. 자식 노드들(예를 들면, 'q'한테도 상속된다.*/
+				/*RULENAME: RULEVALUE;*/
+				/*outline: 1px solid black;*/
+				/*outline: 1px dashed black;
+				font-family: sans-serif;*/
+			}
+			/*html {
+				font-family: sans-serif
+			}*/
+			p {
+				color: #444444;
+			}
+			div {
+				width: 300px;
+				float: left;
+				margin-right: 10px;
+				border: 1px solid #444444;
+			}
+			svg {
+				border: 1px solid #444444;
+			}
+			/*q {
+				font-family: serif;
+			}*/
+			/*html은 sans-serif지만, q는 serif로*/
+			/*p:first-child {
+				width:60%;
+			}*/ /*첫 번째 p*/
+			/*p:last-child {
+				width: 60%;
+				margin-left: 40%;
+			}*/ /*마지막 p*/
+			/*p: nth-child(2) {
+				width:60%;
+			}*/
+			/*두 번째 p는 아래 div이며 정해진 게 없기 때문에 적용 안됨*/
+			/*p: nth-child(3) {
+				width:60%;
+			}*/
+			/*위와 같은 경우 last-child랑 충돌되지만 가장 아래에 있기 때문에 이걸로 적용됨*/
+			/*body p {}*/
+			/*위와 같은 경우, body 밑에 있는 모든 p 의미함*/
+		</style>
+	</head>
+
+	<body>
+		<p>전 세계 행동주의 투자자들의 운용 자산은 2009년 362억달러에서 2015년 1300억달러(약 147조원)까지 연평균 23.7%로 빠르게 성장하고 있다.</p>
+
+		<div>
+			<svg></svg>
+			<!-- svg는 default로 dimension이 정해져 있다 -->
+		</div>
+		<!-- 'div'는 paragraph가 아닌 의미 없는 블록 형성 -->
+
+		<p>지난해 국내 최초로 행동주의 펀드를 출시한 라임자산운용의 원종준 대표는 <q>스튜어드십 코드가 정착되고 지배구조 개선이 추진되면 한국에서 주가가 20% 이상 오를 기업들이 적지 않다"고 말했다.</q></p>
+	</body>
+
+</html>
